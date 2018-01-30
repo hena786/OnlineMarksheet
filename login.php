@@ -9,6 +9,7 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body style="background-image: url('img/body.jpg'); 
           -webkit-background-size: cover;
@@ -19,10 +20,9 @@
             
             <div class="row" >
                 <div class="col-sm-4 col-sm-offset-4 jumbotron" >
+                    <img src="img/login.gif" height="50px" width="200px">
                     <form id="LoginForm">
-                        <div class="form-group">
-                            <img src="img/login.gif" height="50px" width="200px">
-                        </div>
+                        
                         <div class="form-group">
                             <div class="col-sm-4">
                             <label for="inputId">Login Id</label>
@@ -40,10 +40,10 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-sm-2">
+                            <div class="col-sm-12">
                             </div>
                             <div class="col-sm-12">
-                                <input type="submit" class="btn btn-primary" id="Submit" >
+                                <input type="submit" class="btn btn-success btn-lg" id="Submit" style="border-bottom: 3px solid #000; border-radius: 50px;">
                             </div>
                         </div>
                         
