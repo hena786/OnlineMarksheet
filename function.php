@@ -9,6 +9,6 @@ function connect_db()
         return($con);
     }
     else{
-        die(could not connect);
+        die('could not connect');
     }
 }
