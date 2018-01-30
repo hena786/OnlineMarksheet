@@ -15,10 +15,14 @@
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;">
-        <div class="container" style="background-image: url('backgroung.jpg');">
-            <div class="row">
-                <div class="col-sm-4 col-sm-offset-4">
+        <div class="container" style="margin-top: 150px;">
+            
+            <div class="row" >
+                <div class="col-sm-4 col-sm-offset-4 jumbotron" >
                     <form id="LoginForm">
+                        <div class="form-group">
+                            <img src="img/login.gif" height="50px" width="200px">
+                        </div>
                         <div class="form-group">
                             <div class="col-sm-4">
                             <label for="inputId">Login Id</label>
@@ -32,9 +36,17 @@
                             <label for="inputPass">Password</label>
                             </div>
                             <div class="col-sm-12">
-                            <input type="text" class="form-control" id='inputPass'>
+                            <input type="password" class="form-control" id='inputPass'>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <div class="col-sm-2">
+                            </div>
+                            <div class="col-sm-12">
+                                <input type="submit" class="btn btn-primary" id="Submit" >
+                            </div>
+                        </div>
+                        
                         
                     </form>
                 </div>
