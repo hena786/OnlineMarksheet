@@ -2,5 +2,13 @@
 //Session start
 session_start();
 //connect to database
-$con = mysqli_connect("loca")
-
+function connect_db()
+{
+    $con = mysqli_connect("localhost", "root","", "marksheet");
+    if($con){
+        return($con);
+    }
+    else{
+        die(could not connect);
+    }
+}
