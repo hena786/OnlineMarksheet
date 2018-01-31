@@ -1,3 +1,10 @@
+<?php
+include 'function.php';
+if(loggedin()){
+    header('location : home.php');
+}
+
+?>
 <html>
     <head>
         <title>Login </title>
@@ -28,7 +35,7 @@
                             <label for="inputId" class="control-label" >Login Id</label>
                             </div>
                             <div class="col-sm-12">
-                                <input type="text" class="form-control" id='inputId'>
+                                <input type="text" onfocus="this.value=''" value="Login Id" class="form-control" id='inputId'>
                             </div>
                         </div>
                         <div id="validId">
@@ -38,14 +45,14 @@
                             <label for="inputPass" class="control-label">Password</label>
                             </div>
                             <div class="col-sm-12">
-                            <input type="password" class="form-control" id='inputPass'>
+                                <input type="password" onfocus="this.value=''" value="Password" class="form-control" id='inputPass'>
                             </div>
                         </div>
                         <div id="validPass">
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                            <input type="checkbox" name="rememberme" value="Remember Me">
+                            <input type="checkbox" name="rememberme" value="1">
                             <span><label for="remember">Remember Me</label></span>
                             </div>
                         </div>
@@ -70,7 +77,7 @@
                 var id = $('#inputId').val();
                 var password = $('#inputPass').val();
                 if(id === '' || password === ''){
-                    $('#signIn').html('<p>Invalid Credential</p>');
+                    $('#signIn').html('<p>Fill this Credential correctly</p>');
                 }else
                 {
                      var dataString = "id="+id+"&password="+password;
