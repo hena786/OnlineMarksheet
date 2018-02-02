@@ -1,8 +1,8 @@
 <?php
 include 'function.php';
-if(loggedin()){
-    header('location : home.php');
-}
+//if(loggedin()){
+//    header('location : home.php');
+//}
 
 ?>
 <html>
@@ -16,7 +16,7 @@ if(loggedin()){
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body style="background-image: url('img/body.jpg'); 
           -webkit-background-size: cover;
@@ -35,7 +35,7 @@ if(loggedin()){
                             <label for="inputId" class="control-label" >Login Id</label>
                             </div>
                             <div class="col-sm-12">
-                                <input type="text" onfocus="this.value=''" value="Login Id" class="form-control" id='inputId'>
+                                <input type="text" class="form-control" id='inputId'>
                             </div>
                         </div>
                         <div id="validId">
@@ -45,7 +45,7 @@ if(loggedin()){
                             <label for="inputPass" class="control-label">Password</label>
                             </div>
                             <div class="col-sm-12">
-                                <input type="password" onfocus="this.value=''" value="Password" class="form-control" id='inputPass'>
+                                <input type="password"  class="form-control" id='inputPass'>
                             </div>
                         </div>
                         <div id="validPass">
@@ -59,8 +59,11 @@ if(loggedin()){
                         <div class="form-group">
                             
                             <div class="col-sm-12">
-                                <input type="submit" class="btn btn-danger btn-lg" id="Submit" style="border-bottom: 8px solid #000; border-radius: 50px;" value="Log In">
+                                <input type="submit" class="btn" value="Log In" style="background-color: #E81F0B; color: #fff; font-size: 20px; width: 100%; " >
                             </div>
+                            <a href="#" class="forgot-password">
+                                    Forgot the password?
+                               </a>
                         </div>
                         <div id="signIn">
                         </div>
